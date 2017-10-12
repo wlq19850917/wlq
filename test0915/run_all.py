@@ -52,19 +52,19 @@ def send_mail(sender,psw,receiver,smtpserver,report_file):
             smtp.quit()
             print('test report email has send out!')
 if __name__=="__main__":
-        case_path="C:\\Python34\\Lib\\test0915\\case"
+        case_path="D:\\github\\test0915\\case"
         rule = "test*.py"
         all_case=add_case(case_path,rule)
-        report_path = "C:\\Python34\\Lib\\test0915\\case\\report"
+        report_path = "D:\\github\\test0915\\case\\report"
         run_case(all_case,report_path)
         report_file=get_report_file(report_path)
 
-        sender = "wlq19850917@163.com"
-        psw = "wlq123455"
-
-        receiver = "wlq19850917@163.com"
-        smtp_server = 'smtp.163.com'
-        send_mail(sender,psw,receiver,smtp_server,report_file)
+        # sender = "wlq19850917@163.com"
+        # psw = "wlq123455"
+        #
+        # receiver = "wlq19850917@163.com"
+        # smtp_server = 'smtp.163.com'
+        # send_mail(sender,psw,receiver,smtp_server,report_file)
 
 
 
