@@ -189,9 +189,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>自动化测试报告，测试结果如下：</h1>
-<p class='attribute'><strong>Start Time:</strong> 2017-09-26 17:13:03</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:01.872107</p>
-<p class='attribute'><strong>Status:</strong> Pass 7 Error 1</p>
+<p class='attribute'><strong>Start Time:</strong> 2017-10-13 16:50:48</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:02.014116</p>
+<p class='attribute'><strong>Status:</strong> Pass 6 Error 2</p>
 
 <p class='description'>用例执行情况：</p>
 </div>
@@ -318,11 +318,11 @@ pt1.3:
         <pre>
         
 ft1.4: Traceback (most recent call last):
-  File "C:\Python34\Lib\test0915\CAVE\baidu\test02.py", line 37, in test04
+  File "D:\github\test0915\case\baidu\test02.py", line 37, in test04
     self.assertEqual(a,b,msc="失败原因： %s != %s"%(a,b))
 TypeError: assertEqual() got an unexpected keyword argument 'msc'
 Traceback (most recent call last):
-  File "C:\Python34\Lib\test0915\CAVE\baidu\test02.py", line 37, in test04
+  File "D:\github\test0915\case\baidu\test02.py", line 37, in test04
     self.assertEqual(a,b,msc="失败原因： %s != %s"%(a,b))
 TypeError: assertEqual() got an unexpected keyword argument 'msc'
 
@@ -334,17 +334,17 @@ TypeError: assertEqual() got an unexpected keyword argument 'msc'
     </td>
 </tr>
 
-<tr class='passClass'>
-    <td>blog.test_01.Test</td>
+<tr class='errorClass'>
+    <td>blog.test01.Test</td>
     <td>4</td>
-    <td>4</td>
+    <td>3</td>
     <td>0</td>
-    <td>0</td>
+    <td>1</td>
     <td><a href="javascript:showClassDetail('c2',4)">Detail</a></td>
 </tr>
 
 <tr id='pt2.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test01</div></td>
+    <td class='none'><div class='testcase'>test01: 使用assertTrue</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -368,7 +368,7 @@ pt2.1:
 </tr>
 
 <tr id='pt2.2' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test02</div></td>
+    <td class='none'><div class='testcase'>test02: 使用断言assertEqual</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -392,7 +392,7 @@ pt2.2:
 </tr>
 
 <tr id='pt2.3' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test03</div></td>
+    <td class='none'><div class='testcase'>test03: 使用assertIn</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -415,22 +415,30 @@ pt2.3:
     </td>
 </tr>
 
-<tr id='pt2.4' class='hiddenRow'>
-    <td class='none'><div class='testcase'>testMinus</div></td>
+<tr id='ft2.4' class='none'>
+    <td class='errorCase'><div class='testcase'>test04: 断言结果错误</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.4')" >
-        pass</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.4')" >
+        error</a>
 
-    <div id='div_pt2.4' class="popup_window">
+    <div id='div_ft2.4' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.4').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.4').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt2.4: 
+ft2.4: Traceback (most recent call last):
+  File "D:\github\test0915\case\blog\test01.py", line 37, in test04
+    self.assertEqual(a,b,msc="失败原因： %s != %s"%(a,b))
+TypeError: assertEqual() got an unexpected keyword argument 'msc'
+Traceback (most recent call last):
+  File "D:\github\test0915\case\blog\test01.py", line 37, in test04
+    self.assertEqual(a,b,msc="失败原因： %s != %s"%(a,b))
+TypeError: assertEqual() got an unexpected keyword argument 'msc'
+
 
         </pre>
     </div>
@@ -442,9 +450,9 @@ pt2.4:
 <tr id='total_row'>
     <td>Total</td>
     <td>8</td>
-    <td>7</td>
+    <td>6</td>
     <td>0</td>
-    <td>1</td>
+    <td>2</td>
     <td>&nbsp;</td>
 </tr>
 </table>
